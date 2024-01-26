@@ -85,9 +85,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.IMAGE_NAME_PREFIX }}-${{ env.IMAGE_NAME_SUFFIX }}
+            intkbv/markiezenhof-frontend
           labels: |
-            org.label-schema.docker.cmd=docker run -d -p 3000:3000 ${{ env.IMAGE_NAME_PREFIX }}-${{ env.IMAGE_NAME_SUFFIX }}:latest
+            org.label-schema.docker.cmd=docker run -d -p 3000:3000 intkbv/markiezenhof-frontend:latest
           flavor: latest=false
           tags: |
             type=ref,event=branch
