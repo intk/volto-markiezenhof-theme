@@ -1,0 +1,7 @@
+---
+project_folders:
+  # Path to store www.markiezenhof.nl postgres data
+  - path: "/srv/markiezenhof/data"
+    owner: 999
+    group: 999
+    mode: "0750"
